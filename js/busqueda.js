@@ -3,7 +3,7 @@ $(document).on("ready",function(){
 });
 $(document).on('submit','form.formulario', function(e) {
 		e.preventDefault(); // prevent native submit
-		var percent=$("#".$(this).attr("rel"))
+		var percent=$("#"+$(this).attr("rel"))
     	$(this).ajaxSubmit({
         	target: '#respuestaformulario',
 			beforeSend: function() {
