@@ -122,7 +122,7 @@
                     <!--UI Elements-->
                     <li>
                         <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-desktop"></i>
+                            <i class="menu-icon fa fa-arrow-right"></i>
                             <span class="menu-text"> Productos </span>
                             <i class="menu-expand"></i>
                         </a>
@@ -134,14 +134,33 @@
                             </li>
                             <li>
                                 <a href="<?php echo $folder;?>productos/listar.php">
-                                    <span class="menu-text">Listar Productos</span>
+                                    <span class="menu-text">Ver Productos</span>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-dropdown">
+                                    <i class="menu-icon fa fa-arrow-right"></i>
+                                    <span class="menu-text"> Categoria </span>
+                                    <i class="menu-expand"></i>
+                                </a>
+                            <ul class="submenu">
+                            <li>
+                                <a href="<?php echo $folder;?>productos/categoria/">
+                                    <span class="menu-text">Nueva Categoria</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $folder;?>productos/categoria/listar.php">
+                                    <span class="menu-text">Ver Catergorias</span>
+                                </a>
+                            </li>
+                            </ul>
                             </li>
                         </ul>
                      </li>
                      <li>
                         <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-desktop"></i>
+                            <i class="menu-icon fa fa-arrow-right"></i>
                             <span class="menu-text"> Inventario </span>
                             <i class="menu-expand"></i>
                         </a>
