@@ -7,7 +7,6 @@ $reg=consulta($sql);
 
 include_once("cabecerahtml.php");
 ?>
-<script src="js/busqueda.js" type="text/javascript" language="javascript"></script>
 <style type="text/css">
 .der{
 text-align:right !important;    
@@ -57,7 +56,7 @@ function deatalleventa(){
 <div class="col-lg-4 col-sm-12 col-xs-12 trans">
     <div class="well with-header with-footer">
         <div class="header bordered-blue">Búqueda Producto</div>
-        <form class="formulario" method="post" action="venta/busquedaproducto.php">
+        <form class="formulario" method="post" action="venta/busquedaproducto.php" rel="respuestaformulario">
         <label>
             Código de Producto:
             <input type="text" class="form-control input-xs" name="codigo" autofocus>
