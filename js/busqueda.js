@@ -25,3 +25,12 @@ $(document).on('submit','form.formulario', function(e) {
 			}
     	})
 });
+$(document).on("click",".eliminar",function(e){
+	e.preventDefault();
+	if(confirm("¿Desea Eliminar esta Venta?")){
+		var codigo=$(this).attr("rel");
+		$.post($(this).attr("href"),{"codigo":codigo},function(){
+			$("form.formulario").submit();
+		});
+	}
+});
