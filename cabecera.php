@@ -128,12 +128,12 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="<?php echo $folder;?>productos/">
+                                <a href="<?php echo $folder;?>productos/registro/">
                                     <span class="menu-text">Nuevo Producto</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo $folder;?>productos/listar.php">
+                                <a href="<?php echo $folder;?>productos/registro/listar.php">
                                     <span class="menu-text">Ver Productos</span>
                                 </a>
                             </li>
