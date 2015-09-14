@@ -91,9 +91,9 @@ function insertarRegistro($nombretabla,$Values,$Todo=1,$sw=1){
     else
         $query ="INSERT INTO {$nombretabla} ($campos) VALUES ($datos)";
         
-    echo $query."<br>";
+    //echo $query."<br>";
     //echo "NO ESTA HABILITADO EL REGISTRO";
-    //consulta($query);
+    consulta($query);
 }
 function actualizarRegistro($nombretabla,$Values,$cod){
     $data=$Values;
