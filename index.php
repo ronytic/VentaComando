@@ -20,11 +20,11 @@ $(document).on("ready",function(){
 $(document).on("change","#cantidadvender,#precioventa",calcular);
 
 $(document).on("click","#agregar",agregar);
-$(document).on("click",".eliminar",function(e){
+$(document).on("click",".eliminartemp",function(e){
 	e.preventDefault();
 	if(confirm("¿Desea Eliminar esta Venta?")){
 		var codigo=$(this).attr("rel");
-		$.post("venta/eliminar.php",{"codproducto":codigo},function(){
+		$.post("venta/eliminar.php",{"coddetalleventatemporal":codigo},function(){
 			deatalleventa();
 		});
 	}
