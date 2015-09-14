@@ -119,4 +119,8 @@ function eliminar($nombretabla,$cod){
     //echo $sql;
     consulta($sql);
 }
+function ultimo(){
+    global $l;
+    return mysql_insert_id($l);	
+}
 ?>
