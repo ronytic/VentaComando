@@ -2,7 +2,7 @@
 $folder="./";
 $titulo="Venta de Productos";
 include_once("basededatos.php");
-$sql="SELECT * FROM producto ORDER BY codigo,nombre";
+$sql="SELECT * FROM producto WHERE activo=1 ORDER BY codigo,nombre";
 $reg=consulta($sql);
 
 include_once("cabecerahtml.php");
