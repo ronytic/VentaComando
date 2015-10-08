@@ -1,6 +1,7 @@
 <?php
 $folder="../../";
 include_once("../../basededatos.php");
+if(!empty($_POST)){
 extract($_POST);
 if($_FILES['foto']['name']!=""){
     @copy($_FILES['foto']['tmp_name'],"../../imagenes/productos/".$_FILES['foto']['name']);  
@@ -18,6 +19,7 @@ $valores=array("codcategoria"=>"'$codcategoria'",
                 );
 
 insertarRegistro("producto",$valores);
+}
 include_once($folder."cabecerahtml.php");
 ?>
 

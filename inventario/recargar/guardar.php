@@ -2,12 +2,14 @@
 $folder="../../";
 include_once("../../basededatos.php");
 if(!empty($_POST)){
-$nombre=$_POST['nombre'];
-$descripcion=$_POST['descripcion'];
-$valores=array("nombre"=>"'$nombre'",
-                "descripcion"=>"'$descripcion'"
+$cantidadnueva=$_POST['cantidadnueva'];
+$codproducto=$_POST['codproducto'];
+$valores=array("cantidad"=>"'$cantidadnueva'",
+                "cantidadstock"=>"'$cantidadnueva'",
+                "fechacompra"=>"'$fechacompra'",
+                "codproducto"=>"'$codproducto'",
                 );
-insertarRegistro("categoria",$valores);
+insertarRegistro("compra",$valores);
 }
 include_once($folder."cabecerahtml.php");
 ?>
@@ -19,8 +21,7 @@ include_once($folder."cabecerahtml.php");
         <div class="alert alert-success">
         Datos Guardados <strong>Correctamente</strong>
         </div>
-        <a href="index.php" class="btn btn-blue">Nueva Categoria</a>
-        <a href="listar.php" class="btn btn-success">Ver Categorias</a>
+        <a href="index.php" class="btn btn-blue">Nueva Recarga</a>
     </div>
    
 </div>
