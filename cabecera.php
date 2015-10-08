@@ -166,13 +166,32 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="<?php echo $folder;?>productos/">
+                                <a href="<?php echo $folder;?>inventario/recargar/">
                                     <span class="menu-text">Recargar Inventario</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo $folder;?>productos/listar.php">
+                                <a href="<?php echo $folder;?>inventario/revisar/">
                                     <span class="menu-text">Revisar Inventario</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-arrow-right"></i>
+                            <span class="menu-text"> Gasto </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="<?php echo $folder;?>gasto/registro/">
+                                    <span class="menu-text">Registrar Gasto</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $folder;?>gasto/registro/listar.php">
+                                    <span class="menu-text">Ver Gastos</span>
                                 </a>
                             </li>
                         </ul>
@@ -185,13 +204,18 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="<?php echo $folder;?>productos/">
+                                <a href="<?php echo $folder;?>reporte/inventario/">
                                     <span class="menu-text">Estado del Inventario</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo $folder;?>productos/listar.php">
+                                <a href="<?php echo $folder;?>reporte/ventas/">
                                     <span class="menu-text">Ventas del Día</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $folder;?>reporte/gasto/">
+                                    <span class="menu-text">Gastos del Día</span>
                                 </a>
                             </li>
                         </ul>
@@ -244,5 +268,5 @@
                 </div>
                 <!-- /Page Header -->
                 <!-- Page Body -->
-                <div class="page-body" style="background-image:url(<?php echo $folder;?>imagenes/assets/comando8.jpg);background-size:cover">
+                <div class="page-body" style="background-image:url(<?php echo $folder;?>imagenes/assets/comando<?php echo rand(1,9)?>.jpg);background-size:cover">
                 <div class="row">
