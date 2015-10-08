@@ -22,18 +22,9 @@ if($sqlserver){
 }
 
 function consulta($sql){
-    //echo $sql;
+   // echo $sql;
     global $sqlserver,$l;
-    if($sqlserver){
-        $res=mssql_query($sql);
-        $resultado =array ();
-        if ($res)
-        {
-            while ($consF =mssql_fetch_assoc ($res))
-            array_push ($resultado, $consF);
-        }
-       
-    }else{
+
         $res=mysql_query($sql,$l);    
         $resultado =array ();
         if ($res)
@@ -43,7 +34,7 @@ function consulta($sql){
         }
         //echo print_r($resultado);
         return $resultado;
-    }
+
 }
 function insertarRegistro($nombretabla,$Values,$Todo=1,$sw=1){
     if($Todo==1){
