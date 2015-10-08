@@ -30,28 +30,6 @@
                     <div class="navbar-account">
                         <ul class="account-area">
                             <li>
-                                <a class=" dropdown-toggle" data-toggle="dropdown" title="Help" href="#">
-                                    <i class="icon fa fa-warning"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
-                                    <i class="icon fa fa-envelope"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
-                                    <i class="icon fa fa-tasks"></i>
-                                   
-                                </a>
-                            </li>
-                            <li>
-                                <a class="wave in" id="chat-link" title="Chat" href="#">
-                                    <i class="icon glyphicon glyphicon-comment"></i>
-                                </a>
-                            </li>
-                            <li>
                                 <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                     <div class="avatar" title="View your public profile">
                                         <img src="<?php echo $folder?>imagenes/usuarios/alexvargas.jpg">
@@ -103,9 +81,7 @@
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
-                    <input type="text" class="searchinput" />
-                    <i class="searchicon fa fa-search"></i>
-                    <div class="searchhelper">Búqueda de productos</div>
+
                 </div>
                 <!-- /Page Sidebar Header -->
                 <!-- Sidebar Menu -->
