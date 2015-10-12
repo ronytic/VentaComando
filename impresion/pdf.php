@@ -128,16 +128,16 @@ include_once("fpdf_protection.php");
 			// Número de página
 			$this->Fuente("I",7.5);
 			$this->Cell($this->ancho,0,"",1,1);
-			$this->Cell(50,4,utf8_decode($idioma['ReporteGenerado']).": ".date('d-m-Y H:i:s'),0,0,"L");
+			$this->Cell(50,4,utf8_decode("Reporte Generado").": ".date('d-m-Y H:i:s'),0,0,"L");
 			$this->Fuente("I",8);
 			$this->Cell((round(($this->ancho-50)/2)-10),4,utf8_decode($lema),0,0,"C");
 			$this->Fuente("I",7);
 			
 			
 			if($this->CurOrientation=="P"){
-				$this->Cell((round(($this->ancho-50)/2)+10),3,utf8_decode($idioma['TituloSistema'].""),0,0,"R");
-				$this->ln();
-				$this->Cell((round(($this->ancho-50)/2)+40),3,"",0,0,"R");
+				//$this->Cell((round(($this->ancho-50)/2)+10),3,utf8_decode($idioma['TituloSistema'].""),0,0,"R");
+				//$this->ln();
+				//$this->Cell((round(($this->ancho-50)/2)+40),3,"",0,0,"R");
 				$this->Cell((round(($this->ancho-50)/2)+10),3,"Desarrollado por Ronald Nina",0,0,"R");
 			}else{
 				$this->Cell((round(($this->ancho-50)/2)+10),4,utf8_decode($idioma['TituloSistema']." - Desarrollado por Ronald Nina"),0,0,"R");	
