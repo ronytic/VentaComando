@@ -19,6 +19,7 @@ include_once($folder."cabecerahtml.php");
                     <th width="200">C.I.:</th>
                     <th width="50">Fecha de Venta Inicio:</th>
                     <th width="50">Fecha de Venta Fin:</th>
+                    <th>Detalle</th>
                 </tr>
             </thead>
             <tr>
@@ -26,6 +27,7 @@ include_once($folder."cabecerahtml.php");
                 <td><input type="text" name="ci" class="form-control"></td>
                 <td><input type="date" name="fechaventainicio" class="form-control der" placeholder="" value="<?php echo date("Y-m-d");?>"></td>
                 <td><input type="date" name="fechaventafin" class="form-control der" placeholder="" value="<?php echo date("Y-m-d");?>"></td>
+                <td><select name="detalle"><option value="0">No</option><option value="1">Si</option></select></td>
                 <td><input type="submit" name="" class=" btn btn-blue" value="Buscar"></td>
             </tr>
         </table>
