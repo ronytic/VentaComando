@@ -15,12 +15,13 @@ include_once($folder."cabecerahtml.php");
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
-                
-                    <th>Fecha del Gasto:</th>
+                    <th width="50">Fecha del Gasto Inicio:</th>
+                    <th width="50">Fecha del Gasto Final:</th>
                 </tr>
             </thead>
             <tr>
-                <td><input type="date" name="fechagasto" class="form-control der" placeholder="" value="<?php echo date("Y-m-d");?>"></td>
+                <td><input type="date" name="fechagastoinicio" class="form-control der" placeholder="" value="<?php echo date("Y-m-d");?>"></td>
+                <td><input type="date" name="fechagastofin" class="form-control der" placeholder="" value="<?php echo date("Y-m-d");?>"></td>
                 <td><input type="submit" name="" class=" btn btn-blue" value="Buscar"></td>
             </tr>
         </table>

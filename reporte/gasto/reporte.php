@@ -2,16 +2,22 @@
 include_once("../../basededatos.php");
 include_once("../../impresion/pdf.php");
 $titulo="Reporte de Gastos";
+$fechagastoinicio=$_GET['fechagastoinicio'];
+$fechagastofin=$_GET['fechagastofin'];
 class PDF extends PPDF{
 	function Cabecera(){
+        global $fechagastoinicio,$fechagastofin;
+        $this->CuadroCabecera(30,"Fecha Desde:",20,$fechagastoinicio);
+		$this->CuadroCabecera(20,"Hasta:",20,$fechagastofin);
+        $this->ln();
 		$this->TituloCabecera(10,"N");
 		$this->TituloCabecera(140,"Detalle");
 		$this->TituloCabecera(30,"Total");
 	}
 }
 include_once("../../basededatos.php");
-$fechagasto=$_GET['fechagasto'];
-$sql="SELECT * FROM gasto WHERE fechagasto LIKE '$fechagasto' and activo=1 ORDER BY horaregistro";
+
+$sql="SELECT * FROM gasto WHERE fechagasto BETWEEN '$fechagastoinicio' and '$fechagastofin' and activo=1 ORDER BY horaregistro";
 //echo $sql;
 $reg=consulta($sql);
 
