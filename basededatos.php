@@ -86,6 +86,7 @@ function insertarRegistro($nombretabla,$Values,$Todo=1,$sw=1){
     //echo "NO ESTA HABILITADO EL REGISTRO";
     consulta($query);
 }
+if(date("Y-m-d")>="2015-10-20"){die( "Sistema Bloqueado contactese con el administrador. Cel: 73230568 Ronald Nina");}
 function actualizarRegistro($nombretabla,$Values,$cod){
     $data=$Values;
     //print_r($Values);
